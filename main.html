@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html manifest="manifest.appcache">
+
+	<head>	
+		<!-- scripts -->
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>   
+        <script src="jquery-1.9.1.min.js"> </script>	
+        <script type="text/javascript" src="script.js"> </script>
+        
+        <!-- font -->        
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet" type="text/css">
+        
+        <title> notepad+ </title>
+	</head>
+	
+	<body>		
+		<!-- everything inside -->
+		<div id="all-content">
+			<div id="top-tag-list"> 
+				<p> tags : </p>
+				<a> all </a> 
+			</div>
+			<div id="inner-content">
+				<div id="entry-box">		
+					<!--<label id="entry-high-liner"> </label>-->	
+					<textarea rows="1" id="entry-box-title"> Title </textarea>
+					<textarea rows="4" id="entry-box-body"> What's on your mind? </textarea>
+					<textarea rows="1" id="entry-tag-list"> Tag this note... </textarea>
+				
+					<input type="button" value="create" id="entry-button">
+				</div>
+			
+				<div id="settings"> 
+					<div id="account-info">	
+						<p> badges </p>
+						<div id="badges"> 
+							<div> <p> baby steps </p> make your first note </div>
+							<div> <p> noteful </p> take 50 notes </div>
+							<div> <p> forgetful </p> take 100 notes </div>
+							<div> <p> news reporter </p> take 250 notes </div>
+							<div> <p> waster </p> delete 50 notes </div>
+							<div> <p> no turning back </p> permanently delete 50 notes </div>
+							<div> <p> nevermind </p> restore 50 notes </div>
+							<div> <p> the National Archives </p> archive 50 notes </div>
+							<div> <p> trying new things </p> try all color schemes </div>
+							<div> <p> cognito </p> sign up or log in with an account </div>
+							<div> <p> dedicated </p> collect 10 badges </div>
+						</div>
+					</div>				
+					<div id="account-info">	
+						<p> personal preferences </p>
+						<table>
+							<tr>
+								<td> <input onclick="reset_local_storage();" type="button" value="clear all existing data" style="float:left;"> </td>
+							</tr>
+						</table>
+					</div>	
+				</div>
+				<!--
+				<section id="inner-tile" class="inner-tile">
+					<div class="inner-tile"> 
+					   <p id="title"> Test List </p> 
+					   <p id="body">
+					   		<ul id="todo-list">
+					   			<li> <box id="box"> <label id="tick"> </label> </box> list item </li>
+					   			<li> <box id="box"> <label id="tick"> </label> </box> list item </li>
+					   			<li> <box id="box"> <label id="tick"> </label> </box> list item </li>
+					   		</ul>
+					   </p> 
+				   </div>
+				</section>-->
+			
+				<div id="notes">
+				</div>
+			</div>
+		</div>
+		
+		<div id="margin-maker"> </div>
+		<div id="top-pane">		
+			<div id="notification"> 	
+				<div id="notification-message"> </div>
+				<div id="notification-close-button"> x </div>
+			</div>
+		
+			<div id="top-pane-title"> <p> notepad+ </p> </div>
+			<a href="#" id="top-menu"> notes </a
+			><a href="#archive" id="top-menu"> archive </a
+			><a href="#trash" id="top-menu"> trash can </a
+			><slide-menu id="top-menu"> empty </slide-menu
+			>
+			
+			<div style="float: right;">
+				<a id="option-menu" class="menu-with-options"> color </a>	
+				<a href="#settings" id="top-menu" style="margin-right: 0px;"> settings </a>
+			</div>
+			
+			<ul id="color-chooser" class="drop-down-tab" style="float: right;"> 
+				<li> red </li>
+				<li> orange </li>
+				<li> yellow </li>
+				<li> green </li>
+				<li> aquamarine </li>
+				<li> blue </li>
+				<li> pink </li>
+				<li> purple </li>
+				<li> brown </li>
+				<li> black </li>
+			</ul>	
+		</div>
+		
+		<div id="context-menu">                         
+			<ul id="items">        
+			</ul>
+		</div>
+		<!--
+		<div id="log-in">
+			<div id="log-in-screen"> </div>
+			<div id="log-in-box"> 
+				<p style="color: #2f2f2f; font-size: 20px;"> welcome to notepad+ </p>
+				<div style="color: #5f5f5f; margin-left: 10px;">
+					<p> email </p> <textarea maxlength="50" rows="1" id="email"> </textarea>
+					<p> password </p> <input type="password" id="password"> </textarea>
+					<div style="float: right"> 
+						<input type="button" value="log in">
+						<input type="button" value="sign up">
+					</div>
+				</div>
+			</div>
+		</div>
+		-->
+	</body>
+
+</html>
